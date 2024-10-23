@@ -1,0 +1,104 @@
+/* CSS cho video nền */
+body, html {
+    height: 100%; /* Đảm bảo chiều cao đầy đủ */
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    overflow: hidden; /* Ẩn thanh cuộn */
+}
+
+.song-video {
+    position: absolute; /* Đặt video ở vị trí tuyệt đối */
+    top: 0; /* Đặt video ở trên cùng */
+    left: 0; /* Đặt video ở bên trái */
+    width: 100%; /* Đảm bảo video rộng 100% */
+    height: 100%; /* Đảm bảo video cao 100% */
+    object-fit: cover; /* Đảm bảo video phủ toàn bộ */
+    z-index: -1; /* Đặt video phía sau các phần tử khác */
+}
+
+body {
+    background: linear-gradient(to right, #2c2d35, #282128); 
+    color:#007bff;
+}
+
+.container {
+    background-color: #090f1f; /* Màu nền trắng cho form */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    padding: 30px; /* Padding cho form */
+    width: 500px;
+    margin: 0 auto; /* Căn giữa */
+    margin-top: 50px; /* Khoảng cách từ trên */
+    margin-bottom: 50px; /* Khoảng cách từ dưới */
+}
+
+
+h3 {
+    font-family: 'Arial', sans-serif; /* Font chữ cho tiêu đề */
+    color: white; /* Màu chữ cho tiêu đề */
+}
+
+.form-label {
+    font-weight: bold; /* Làm đậm nhãn */
+    color: white; /* Màu chữ cho nhãn */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Viền cho input */
+    border-radius: 5px; /* Bo tròn góc cho input */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+
+.form-control:focus {
+    border-color: #36e2ec; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng khi focus */
+}
+
+.input-custom {
+    background-color: #2a3d50; /* Màu nền cho ô input */
+    border: 1px solid #2a3d50; /* Viền cho input */
+    border-radius: 5px; /* Bo tròn góc cho input */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.input-custom:focus {
+    background-color: #ffffff; /* Màu nền khi focus */
+    border-color: #007bff; /* Màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng khi focus */
+}
+
+/* Đảm bảo màu nền không bị ghi đè khi có giá trị */
+.input-custom:not(:placeholder-shown) {
+    background-color: #ffffff; /* Giữ màu nền khi có dữ liệu */
+}
+
+.btn-primary {
+    background-color: #36e2ec; /* Màu nền cho nút */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.alert {
+    border-radius: 5px; /* Bo tròn góc cho thông báo lỗi */
+}
+
+p {
+    color: white; /* Màu chữ cho đoạn văn */
+}
+
+a {
+    color: #36e2ec; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+

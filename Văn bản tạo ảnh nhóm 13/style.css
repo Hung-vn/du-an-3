@@ -1,0 +1,337 @@
+/* cài đặt thanh trang chủ */
+body {
+  margin: 0; /* Xóa margin mặc định */
+  padding-top: 50px; /* Tạo khoảng cách cho nội dung bên dưới (điều chỉnh theo chiều cao của nav) */
+}
+
+.navbar {
+  /* background-color: red; */
+  font-size: 2vh;
+  position: fixed; /* Ghim thanh nav ở vị trí cố định */
+  width: 110%; /* Chiều rộng của thanh nav */
+  top: 10px; /* Vị trí từ đỉnh trang */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Đảm bảo nav nằm trên các phần tử khác */
+  margin: 0 auto; /* Căn giữa thanh nav */
+  padding: 5px 10px; /* Khoảng cách bên trong nav */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+  display: flex; /* Sử dụng Flexbox cho nav */
+  justify-content: space-between; /* Đặt khoảng cách đều giữa các phần tử */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  font-weight: 1000;
+}
+
+.navbar-nav {
+  display: flex; /* Sử dụng Flexbox cho danh sách nav */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 25px; /* Khoảng cách giữa các liên kết */
+}
+
+.nav-item {
+  list-style: none; /* Xóa dấu chấm cho danh sách */
+}
+
+.nav-link {
+  text-decoration: none; /* Bỏ gạch chân */
+  padding: 8px 12px; /* Khoảng cách bên trong cho các thuộc tính */
+  color: #dfe5eb; /* Màu chữ */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.nav-link:hover {
+  background-color: #2a3d50; /* Màu nền khi hover */
+}
+
+#logoutButton {
+  background-color: #181822;
+  margin-left: 5px; /* Đẩy nút đăng xuất sang bên phải */
+  padding: 8px 12px; /* Đảm bảo nút có padding giống như các liên kết khác */
+}
+.Banner {
+  width: 160%; /* Đặt chiều rộng cụ thể cho banner */
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.Banner p {
+  font-size: 2vh;
+  color: #fff;
+  display: inline-block;
+  animation: Banner 30s linear infinite;
+}
+
+@keyframes Banner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  margin: 0; /* Xóa Banner mặc định */
+  padding-top: 50px; /* Tạo khoảng cách cho nội dung bên dưới (điều chỉnh theo chiều cao của nav) */
+}
+/* ///////////////////////////////////////// */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* thanh cuộn */
+  height: 400%; /* Chiều cao của body */
+  overflow-y: auto;
+  scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+}
+
+.Main {
+  /* background-color: red; */
+  margin-top: 10%;
+  width: 100%;
+  height: 70%;
+  display: flex; /*để cho video và ảnh nằm ngang so với text*/
+}
+video {
+  position: fixed; /* Đặt video cố định */
+  top: 0;
+  left: 0;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  height: 100%; /* Chiếm toàn bộ chiều cao */
+  object-fit: cover; /* Đảm bảo video không bị méo */
+  z-index: -1; /* Đặt video ở dưới cùng */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  width: 40%;
+  height: 60%;
+  margin-left: 23vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  flex: 1; /* Chiếm một phần không gian */
+  padding: 20px;
+}
+.input-section a {
+  color: #fff;
+  font-size: 2vh;
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.input-section h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 6vh;
+  margin-bottom: 40px;
+}
+
+.input-section label {
+  font-weight: 100;
+  display: block;
+  color: #fff;
+  font-size: 2.4vh;
+  line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+}
+
+.input-container {
+  position: relative;
+  width: 80%; /* Kích thước của ô nhập liệu */
+  margin-top: 4vh;
+}
+
+.input-section input {
+  color: #fff;
+  font-size: 2vh;
+  background-color: rgb(12, 12, 12);
+  width: 100%;
+  height: 20%;
+  padding: 10px 50px 10px 10px; /* Padding bên trái cho nút */
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  box-sizing: border-box; /* Để padding không làm tăng kích thước */
+}
+.input-section input::before {
+  color: #fff;
+  font-size: 2vh;
+  background-color: rgb(12, 12, 12);
+  width: 100%;
+  height: 20%; /* Thay đổi giá trị theo ý muốn */
+  padding: 10px 50px 10px 10px; /* Padding bên trái cho nút */
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  box-sizing: border-box; /* Để padding không làm tăng kích thước */
+}
+.input-section button {
+  height: 100%;
+  width: 25%;
+  font-size: 2vh;
+  position: absolute;
+  right: 0px; /* Đặt nút ở bên phải */
+  top: 50%; /* Giữa theo chiều dọc */
+  transform: translateY(-50%); /* Giữa chính xác */
+  background-color: #36afdf;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px; /* Điều chỉnh padding cho nút */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-section button:hover {
+  background-color: #2a3d50;
+}
+
+.input-section p {
+  font-weight: 100;
+  color: white; /* Màu chữ trắng */
+  font-size: 2.3vh; /* Kích thước chữ (thay đổi theo ý muốn) */
+  margin-top: 2.3vh; /* Khoảng cách phía trên (tùy chọn) */
+}
+
+.Main .image-section {
+  margin-left: 5%;
+  /* background-color: red; */
+  height: 80%; /* Chiều cao video */
+  width: 80%;
+  flex: 1; /* Chiếm một phần không gian */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Định vị tương đối để ảnh và video nằm trong cùng một khung */
+}
+.Main .image-section video {
+  position: absolute; /* Video sẽ nằm ở vị trí tuyệt đối bên trong .image-section */
+  left: 0;
+  top: 0;
+  /* border: 1px solid #fff; */
+  height: 100%;
+  width: 70%;
+  border-radius: 10px;
+  z-index: 1; /* Video ở tầng dưới */
+  display: block; /* Đảm bảo video hiển thị */
+}
+
+.image-section img {
+  position: absolute; /* Ảnh cũng nằm ở vị trí tuyệt đối */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  z-index: 2; /* Ảnh ở tầng trên */
+  display: none; /* Ảnh chỉ hiển thị khi tạo ra */
+}
+
+.button {
+  margin-top: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  background-color: #36afdf; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  padding: 10px 20px; /* Khoảng cách */
+  border-radius: 49px; /* Bo góc */
+  text-decoration: none; /* Bỏ gạch chân */
+  margin-top: 20px; /* Khoảng cách phía trên */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.button:hover {
+  background-color: #a9dde0; /* Màu nền khi hover */
+}
+
+/* tải  */
+
+.download a {
+  height: 5%;
+  width: 12%;
+  margin-right: 5vh;
+  position: absolute;
+  right: 0; /* Căn phải */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  transform: translateY(-50%); /* Căn giữa chính xác */
+  z-index: 3; /* Đảm bảo nút nằm trên cùng */
+  background-color: #36afdf;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #fff; /* Đảm bảo màu chữ là màu trắng */
+}
+
+.download a:hover {
+  background-color: #bff8ff;
+}
+/* /Phần chữ ở cuối */
+
+.cuoi {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: -1%;
+}
+
+.cuoi h1 {
+  color: #fff;
+  font-size: 5vh;
+}
+.cuoi h2 {
+  color: #fff;
+  font-size: 4vh;
+}
+/* ///// lưu ảnh */
+#imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Khoảng cách giữa các ảnh */
+  justify-content: center; /* Căn giữa ảnh */
+}
+#imageGallery img {
+  width: 18%; /* Chiều rộng của ảnh */
+  height: auto; /* Chiều cao tự động */
+  border: 1px solid #ddd; /* Viền ảnh */
+  background-color: #fff; /* Màu nền của ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ cho ảnh */
+}
+
+/* phần clear ảnh */
+#clearButton {
+  margin-top: 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  background-color: #36afdf; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  padding: 10px 20px; /* Khoảng cách */
+  border-radius: 49px; /* Bo góc */
+  text-decoration: none; /* Bỏ gạch chân */
+  margin-top: 20px; /* Khoảng cách phía trên */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+#clearButton:hover {
+  background-color: #bff8ff;
+}
